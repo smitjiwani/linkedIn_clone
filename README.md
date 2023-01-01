@@ -49,3 +49,4 @@ $ yarn dev # npm start
 * News section with realitime news api.
 * Notification feature with adding.
 * Photos videos and event features.
+* Like, Comment, Share features.
