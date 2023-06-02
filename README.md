@@ -51,10 +51,13 @@ npm install
 ![Screenshot 2023-06-02 131359](https://github.com/smitjiwani/linkedIn_clone/assets/78549024/df471e5b-e894-402d-94b3-804edc1a636b)
 
 *scroll down to the </> webapp icon
+
 ![Screenshot 2023-06-02 131616](https://github.com/smitjiwani/linkedIn_clone/assets/78549024/add16c18-c493-4dcd-8ee3-2cac69f65f6f)
-![Screenshot 2023-06-02 131642](https://github.com/smitjiwani/linkedIn_clone/assets/78549024/ba3c2257-e76a-4891-9e1c-1d84fdb80d08)
 
 * copy the firebaseConfig to src/firebase.js
+![Screenshot 2023-06-02 131642](https://github.com/smitjiwani/linkedIn_clone/assets/78549024/ba3c2257-e76a-4891-9e1c-1d84fdb80d08)
+
+
 
 
 ```
