@@ -55,6 +55,7 @@ npm install
 ![Screenshot 2023-06-02 131616](https://github.com/smitjiwani/linkedIn_clone/assets/78549024/add16c18-c493-4dcd-8ee3-2cac69f65f6f)
 
 * Copy the firebaseConfig to src/firebase.js
+
 ![Screenshot 2023-06-02 131642](https://github.com/smitjiwani/linkedIn_clone/assets/78549024/ba3c2257-e76a-4891-9e1c-1d84fdb80d08)
 
 
