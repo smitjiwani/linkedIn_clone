@@ -30,6 +30,9 @@ Using React.JS create a LinkedIn Clone with the following features:
 Clone this repo, cd into it and run the following commands to install the dependencies:
 
 ```
+$ git clone https://github.com/smitjiwani/linkedIn_clone
+```
+```
 $ yarn # npm install
 $ yarn build # npm run build
 ``` 
