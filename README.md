@@ -60,19 +60,18 @@ npm install
 
 
 
-
+Development
+After installing all dependencies run Webpack in watch-mode to continually compile the JavaScript as you work:
 ```
 npm run start
 ``` 
+Production mode:
 ```
 npmm run build
 ```
-Development
-After installing all dependencies run Webpack in watch-mode to continually compile the JavaScript as you work:
 
-```
-$ yarn dev # npm start
-```
+
+
 
 ## features to be added
 
