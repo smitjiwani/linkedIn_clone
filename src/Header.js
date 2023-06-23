@@ -20,6 +20,10 @@ function Header() {
     dispatch(logout());
     auth.signOut();
   };
+
+  const dropdown=()=>{
+    //here u can make that to toggle , 
+  }
   return (
     <div className="header">
       <div className="header__left">
@@ -38,7 +42,7 @@ function Header() {
         <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
         <HeaderOption Icon={ChatIcon} title="messaging" />
         <HeaderOption Icon={NotificationIcon} title="Notifications" />
-        <HeaderOption avatar={true} onClick={logoutOfApp}title="me" />
+        <HeaderOption avatar={true} onClick={dropdown}title="me" />
       </div>
     </div>
   );
