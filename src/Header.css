@@ -49,20 +49,22 @@
 }
 .header_drop{
     position: absolute;
-    right: 36;
+    right: 36px;
     align-items: center;
     text-align: center;
     background-color: white;
-    margin-top: 16;
-    padding-left: 4;
-    width: 30;
+    margin-top: 20px;
+    padding-left: 14px;
+    width: 30vh;
     z-index: 10;
 }
 
 .account:hover{
     background-color: aqua;
+    text-decoration: underline;
 }
 
 .setting:hover{
     background-color: aqua;
+    text-decoration: underline;
 }

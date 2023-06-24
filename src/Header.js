@@ -25,7 +25,7 @@ function Header() {
   return (
     <>
     <span>
-        {dropdown && <div onClick={() => { setDropDown(true) }} onMouseLeave={() => { setDropDown(false) }} className='header_drop'>
+        {dropdown && <div onMouseLeave={() => { setDropDown(false) }} className='header_drop'>
           <ul>
             <a href={'/'}><li className='account'>My Account</li></a>
             <a href={'/'}><li className='setting'>setting</li></a>
@@ -52,7 +52,7 @@ function Header() {
         <HeaderOption Icon={ChatIcon} title="messaging" />
         <HeaderOption Icon={NotificationIcon} title="Notifications" />
         <span onClick={() => { setDropDown(true) }} >
-             <HeaderOption avatar={true} onClick={dropdown}title="me" /> 
+             <HeaderOption avatar={true} onClick={dropdown} title="me" /> 
         </span>
       </div>
     </div>
