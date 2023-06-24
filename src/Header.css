@@ -47,3 +47,14 @@
 .header__right{
     display: flex;
 }
+.header_drop{
+    position: absolute;
+    right: 36;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin-top: 16;
+    padding-left: 4;
+    width: 30;
+    z-index: 10;
+}

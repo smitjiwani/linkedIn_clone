@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import HeaderOption from "./HeaderOption";
@@ -15,16 +15,25 @@ import { logout } from "./features/counter/userSlice";
 
 function Header() {
   const dispatch = useDispatch();
+  const [dropdown ,setDropDown] =useState(false)
 
   const logoutOfApp = () => {
     dispatch(logout());
     auth.signOut();
   };
 
-  const dropdown=()=>{
-    //here u can make that to toggle , 
-  }
   return (
+    <>
+    <span>
+        {dropdown && <div onClick={() => { setDropDown(true) }} onMouseLeave={() => { setDropDown(false) }} className='header_drop'>
+          <ul>
+            <a href={'/'}><li className='p'>My Account</li></a>
+            <a href={'/'}><li className='pp'>setting</li></a>
+            <li onClick={logoutOfApp} className='ppp'>Logout</li>
+          </ul>
+        </div>}   
+      </span>
+
     <div className="header">
       <div className="header__left">
         <img
@@ -42,9 +51,12 @@ function Header() {
         <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
         <HeaderOption Icon={ChatIcon} title="messaging" />
         <HeaderOption Icon={NotificationIcon} title="Notifications" />
-        <HeaderOption avatar={true} onClick={dropdown}title="me" />
+        <span onClick={() => { setDropDown(true) }} >
+             <HeaderOption avatar={true} onClick={dropdown}title="me" /> 
+        </span>
       </div>
     </div>
+    </>
   );
 }
 
