@@ -27,9 +27,9 @@ function Header() {
     <span>
         {dropdown && <div onClick={() => { setDropDown(true) }} onMouseLeave={() => { setDropDown(false) }} className='header_drop'>
           <ul>
-            <a href={'/'}><li className='p'>My Account</li></a>
-            <a href={'/'}><li className='pp'>setting</li></a>
-            <li onClick={logoutOfApp} className='ppp'>Logout</li>
+            <a href={'/'}><li className='account'>My Account</li></a>
+            <a href={'/'}><li className='setting'>setting</li></a>
+            <li onClick={logoutOfApp} className='log'>Logout</li>
           </ul>
         </div>}   
       </span>
