@@ -47,3 +47,36 @@
 .header__right{
     display: flex;
 }
+.header_drop{
+    background-color: #f3f2ef;
+    position: absolute;
+    top: 65px;
+    right: 300px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 0px;
+    z-index: 10;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.header_drop ul{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 0%;
+    
+}
+
+.header_drop ul li{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    border-top: grey;
+}
+
+
