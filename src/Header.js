@@ -27,8 +27,8 @@ function Header() {
     <span>
         {dropdown && <div onMouseLeave={() => { setDropDown(false) }} className='header_drop'>
           <ul>
-            <a href={'/'}><li className='account'>My Account</li></a>
-            <a href={'/'}><li className='setting'>setting</li></a>
+            <li className='account'>My Account</li>
+            <li className='setting'>setting</li>
             <li onClick={logoutOfApp} className='log'>Logout</li>
           </ul>
         </div>}   

@@ -48,23 +48,35 @@
     display: flex;
 }
 .header_drop{
+    background-color: #f3f2ef;
     position: absolute;
-    right: 36px;
+    top: 65px;
+    right: 300px;
     align-items: center;
     text-align: center;
-    background-color: white;
     margin-top: 20px;
-    padding-left: 14px;
-    width: 30vh;
+    padding: 0;
+    padding-left: 0px;
     z-index: 10;
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 
-.account:hover{
-    background-color: aqua;
-    text-decoration: underline;
+.header_drop ul{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 0%;
+    
 }
 
-.setting:hover{
-    background-color: aqua;
-    text-decoration: underline;
+.header_drop ul li{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    border-top: grey;
 }
+
+
