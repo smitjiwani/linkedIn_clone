@@ -3,31 +3,32 @@ import { useDispatch } from "react-redux";
 import { login } from "./features/counter/userSlice";
 import { auth } from "./firebase";
 import "./Login.css";
-import { Outlet } from "react-router";
-import App from "./App";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import { selectUser } from "./features/counter/userSlice";
+import { useSelector } from "react-redux";
 
-function Login() {
+function Signup() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [prof, setProf] = useState('');
   const dispatch =useDispatch('');
+  const user = useSelector(selectUser);
 
-  const loginToApp = (e) => {
-    e.preventDefault();
+  // const loginToApp = (e) => {
+  //   e.preventDefault();
 
-    auth.signInWithEmailAndPassword(email, password)
-    .then(userAuth => {
-      dispatch(login({
-            email: userAuth.user.email,
-            uid: userAuth.user.uid,
-            displayName: userAuth.user.displayName,
-            photoURL: userAuth.user.photoURL,
-      }))
-    }).catch((error)=>alert(error));
+  //   auth.signInWithEmailAndPassword(email, password)
+  //   .then(userAuth => {
+  //     dispatch(login({
+  //           email: userAuth.user.email,
+  //           uid: userAuth.user.uid,
+  //           displayName: userAuth.user.displayName,
+  //           photoURL: userAuth.user.photoURL,
+  //     }))
+  //   }).catch((error)=>alert(error));
 
-  }
+  // }
 
   const Register = () => {
     if(!name){
@@ -52,23 +53,23 @@ function Login() {
 
 
   return (
+    <>
     <div className="login">
       <img
         src="https://1000logos.net/wp-content/uploads/2017/03/Linkedin-Logo.png"
         alt=""
       />
-      {/* <input value={name}  onChange={(e) => setName(e.target.value)}type="text" placeholder="full name(required if registering)" />
-      <input value={prof}  onChange={(e) => setProf(e.target.value)}type="text" placeholder="profile picture Url optional" /> */}
+      <input value={name}  onChange={(e) => setName(e.target.value)}type="text" placeholder="full name" />
+      <input value={prof}  onChange={(e) => setProf(e.target.value)}type="text" placeholder="profile picture Url" />
       <input value={email}  onChange={(e) => setEmail(e.target.value)}type="email" placeholder="email" />
       <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="password" />
-      <Link to="/"><button onClick={loginToApp}>Sign In</button></Link>
-      <p>Not a member?<Link to="/signup"><span className="login_register">Register Now!</span></Link></p>
-      <Outlet />
+      <Link to={user ? ("/"): ("/signup")}><button onClick={Register}>Sign Up</button></Link>
+      <p>Already a user?<Link to="/"><span className="login_register">Sign In!</span></Link></p>
+      
     </div>
-
-  );
+    <Outlet />
+    </>
+  )
 }
 
-export default Login;
-
-
+export default Signup
