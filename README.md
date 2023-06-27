@@ -2,6 +2,8 @@
 
 live project: https://linkedin-clone-639f1.web.app/
 
+discord: https://discord.gg/axgcuQcT
+
 Node 16 required.
 
 The challenge:
