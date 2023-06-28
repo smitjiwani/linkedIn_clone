@@ -8,6 +8,11 @@ import './index.css';
 import Header from './Header';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from './Signup';
+import Messages from './Messages';
+import Network from './Network';
+import Jobs from './Jobs';
+import Notifs from './Notifs';
+
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -18,9 +23,13 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-          <Route index element={<App />} />
-          <Route path="/signup" element={<Signup />} />
-          
+        <Route index element={<App />} />
+        <Route path="/signup" element={<Signup />} />
+
+        <Route path="/message" element={<Messages />} />
+        <Route path="/network" element={<Network />} />
+        <Route path="/jobs" element={<Jobs />} />
+        <Route path="/notifs" element={<Notifs />} />
         
       </Routes>
     </BrowserRouter>
