@@ -1,11 +1,25 @@
 import React from 'react'
 import Header from './Header'
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/counter/userSlice";
+import Login from './Login';
 
 function Jobs() {
+  const user = useSelector(selectUser);
   return (
     <div>
-      <Header />
-      <span>jobs page</span>
+      {!user ? (
+        <Login />
+      ) : (
+        <>
+          <Header />
+          <div className="app__body">
+
+            <span>jobs page</span>
+          </div>
+        </>
+      )}
+
     </div>
   )
 }
