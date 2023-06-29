@@ -28,8 +28,8 @@ function Header() {
       <span>
         {dropdown && <div onClick={() => { !dropdown ? setDropDown(true) : setDropDown(false) }} className='header_drop'>
           <ul>
-            <li className='account'>My Account</li>
-            <li className='setting'>setting</li>
+            <Link to="account"><li className='account'>My Account</li> </Link>
+            <Link to="settings"><li className='setting'>setting</li> </Link>
             <li onClick={logoutOfApp} className='log'>Logout</li>
           </ul>
         </div>}

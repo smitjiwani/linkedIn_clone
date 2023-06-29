@@ -1,13 +1,14 @@
 import React from 'react'
-import Header from './Header'
 import { useSelector } from 'react-redux';
-import { selectUser } from './features/counter/userSlice';
+import { selectUser } from "./features/counter/userSlice";
 import Login from './Login';
+import Header from './Header';
 
-function Messages() {
-  const user = useSelector(selectUser);
+function Settings() {
+    const user = useSelector(selectUser);
   return (
     <div>
+      <div>
       {!user ? (
         <Login />
       ) : (
@@ -15,13 +16,14 @@ function Messages() {
           <Header />
           <div className="app__body">
 
-            <span>Messages page</span>
+            <span>Account page</span>
           </div>
         </>
       )}
 
     </div>
+    </div>
   )
 }
 
-export default Messages
+export default Settings

@@ -12,6 +12,8 @@ import Messages from './Messages';
 import Network from './Network';
 import Jobs from './Jobs';
 import Notifs from './Notifs';
+import Account from './Account';
+import Settings from './Settings';
 
 
 const container = document.getElementById('root');
@@ -25,11 +27,12 @@ root.render(
         <Route path="/" element={<App />} />
         <Route index element={<App />} />
         <Route path="/signup" element={<Signup />} />
-
         <Route path="/message" element={<Messages />} />
         <Route path="/network" element={<Network />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/notifs" element={<Notifs />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/settings" element={<Settings />} />
         
       </Routes>
     </BrowserRouter>
