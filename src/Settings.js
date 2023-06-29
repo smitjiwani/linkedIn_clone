@@ -16,7 +16,7 @@ function Settings() {
           <Header />
           <div className="app__body">
 
-            <span>Account page</span>
+            <span>Settings page</span>
           </div>
         </>
       )}
