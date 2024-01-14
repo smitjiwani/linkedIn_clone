@@ -1,0 +1,48 @@
+.card{
+   
+        border: rgb(92, 92, 92) 1px solid;
+        color: black;
+        margin: 1rem;
+        padding: .5rem;
+        min-width: 11.5rem;
+        max-width:11.5rem ;
+        min-height: 17.5rem;
+        max-height: 17.5rem;
+        border-radius: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        margin-top: 2rem;
+        
+      }
+img{
+    width: 9rem;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    
+}
+
+
+.btn{
+ color: #0B66C2;
+ border: #0B66C2 1px solid ;
+ width: 10rem;
+ height: 2rem;
+border-radius: 2rem;
+justify-content: center;
+padding: .3rem;
+margin: .3rem;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 8px grey ;
+    transition: ease-in .15s ;
+}
+.btn:hover{
+    border: #0b67c2 2px solid;
+    background-color: #0b67c244;
+}
