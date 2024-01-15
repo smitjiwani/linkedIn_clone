@@ -1,0 +1,12 @@
+.app__body{
+    flex: 1;
+    height: 90vh;
+    margin-right: 2rem;
+    padding: 2rem;
+    min-width: 804px ;
+    
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+}

@@ -2,6 +2,7 @@
     flex: 0.6;
     margin: 0px 20px;
     top: 80px;
+    height: 100vh;
 }
 
 .feed__inputContainer{

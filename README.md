@@ -73,7 +73,7 @@ npm run start
 ``` 
 Production mode:
 ```
-npmm run build
+npm run build
 ```
 
 

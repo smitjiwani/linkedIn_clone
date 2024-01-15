@@ -1,0 +1,15 @@
+html{
+    background-color: #F4F2EE;
+}
+.app__body{
+background-color: white;
+border: gray 1px;
+border-radius: 1rem;
+padding: 1rem;
+display: flex;
+flex-wrap: wrap;
+margin: 2rem;
+}
+.coll{
+    display: flex;
+}

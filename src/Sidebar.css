@@ -5,6 +5,10 @@
     border-radius: 10px;
     text-align: center;
     height: fit-content;
+    min-width:300px;
+    max-width:300px;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 .sidebar-avatar{

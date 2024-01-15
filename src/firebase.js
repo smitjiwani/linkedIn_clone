@@ -3,7 +3,13 @@ import firebase from "firebase";
 
 
 const firebaseConfig = {
-    // Add firbase config here.  
+  apiKey: "AIzaSyAfaNMVGT2NTzi67yHSQsBdZS4rHBLjzpg",
+  authDomain: "linkedin-ed7f6.firebaseapp.com",
+  projectId: "linkedin-ed7f6",
+  storageBucket: "linkedin-ed7f6.appspot.com",
+  messagingSenderId: "598314667629",
+  appId: "1:598314667629:web:19452cb2f3baf8c9f7b964",
+  measurementId: "G-P8DXMM6FHP"
   };
 
 
