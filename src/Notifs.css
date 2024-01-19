@@ -1,0 +1,14 @@
+.notifs{
+    display: flex;
+    
+}
+.btn{
+    color: #0B66C2;
+    border: #0B66C2 1px solid ;
+   border-radius: 2rem;
+   justify-content: center;
+   padding: auto;
+   margin: .4rem;
+   height: auto;
+   width: auto;
+   }
