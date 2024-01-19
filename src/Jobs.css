@@ -1,0 +1,44 @@
+.jobs{
+    display: flex;
+   
+}
+.btn{
+    color: #0B66C2;
+    border: #0B66C2 1px solid ;
+   border-radius: 2rem;
+   justify-content: center;
+   padding: auto;
+   margin: .4rem;
+   height: auto;
+   width: auto;
+   }
+.btn:hover{
+    border: #0b67c2 1.5px solid;
+    background-color: #0b67c244;
+}   
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+p{
+    color: gray;
+    
+}
+.img{
+    display: flex;
+    justify-content: center;
+    }
+
+.sidebar__avatar{
+    width: 3rem;
+    height: 3rem;
+}
+.feed{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    border: gray .5px solid;
+    border-radius: 1rem;
+}
