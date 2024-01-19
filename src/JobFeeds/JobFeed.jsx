@@ -10,7 +10,9 @@ import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 function JobFeed (){
     const user = useSelector(selectUser);
     return(
+
         <div style={{padding:".5rem"}}>
+
             <div className="img">
             <Avatar src={user.photoURL} className="sidebar__avatar">
         {user? user.email[0] :<AccountCircleRoundedIcon />}

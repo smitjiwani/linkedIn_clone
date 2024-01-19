@@ -9,7 +9,9 @@ import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 
 function JobFeed1 (){
     const user = useSelector(selectUser);
+
     return(<div style={{padding:".5rem"}}>
+
         <h3 style={{textAlign:"left"}}>Suggested Job searches</h3>
         <br></br>
         <div className="btns" >
