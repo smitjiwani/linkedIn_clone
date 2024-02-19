@@ -3,13 +3,14 @@ import firebase from "firebase";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAfaNMVGT2NTzi67yHSQsBdZS4rHBLjzpg",
-  authDomain: "linkedin-ed7f6.firebaseapp.com",
-  projectId: "linkedin-ed7f6",
-  storageBucket: "linkedin-ed7f6.appspot.com",
-  messagingSenderId: "598314667629",
-  appId: "1:598314667629:web:19452cb2f3baf8c9f7b964",
-  measurementId: "G-P8DXMM6FHP"
+  apiKey: "AIzaSyCWVqbRzot34P-XAhV75NyoPcIVycvcmwE",
+  authDomain: "linkedin-clone-639f1.firebaseapp.com",
+  databaseURL: "https://linkedin-clone-639f1-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "linkedin-clone-639f1",
+  storageBucket: "linkedin-clone-639f1.appspot.com",
+  messagingSenderId: "229454112654",
+  appId: "1:229454112654:web:235ea0afa031ca018e66df",
+  measurementId: "G-WL37Z81NT9"
   };
 
 
